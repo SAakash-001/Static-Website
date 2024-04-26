@@ -1,0 +1,108 @@
+/* signup.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background: linear-gradient(to right, #FF6B6B, #FFB25E, #E2D06B, #81E979, #6ACFF6); */
+    animation: gradient-animation 10s ease infinite;
+    background: #1488cc;
+    background: -webkit-linear-gradient(0deg, #1488cc 0%, #2b32b2 100%);
+    background: linear-gradient(0deg, #1488cc 0%, #2b32b2 100%);
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    padding: 70px;
+}
+
+h2, h3 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Different colors for form groups */
+.color1 {
+    background-color: #FF6B6B;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.color2 {
+    background-color: #FFB25E;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.color3 {
+    background-color: #E2D06B;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Add more color classes as needed */

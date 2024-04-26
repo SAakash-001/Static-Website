@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Mental Health Awareness</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <h2>Sign Up</h2>
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+
+            <!-- Questionnaire Section -->
+            <h3>Mental Health Questionnaire</h3>
+            <p>Please answer the following questions to help us better understand your mental health:</p>
+
+            <div class="form-group">
+                <label for="anxiety">Do you experience anxiety?</label><br>
+                <select id="anxiety" name="anxiety">
+                    <option value="">Select an option</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+                <textarea id="anxiety-explanation" name="anxiety-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="sleep">How well do you sleep?</label><br>
+                <select id="sleep" name="sleep">
+                    <option value="">Select an option</option>
+                    <option value="well">Well</option>
+                    <option value="poorly">Poorly</option>
+                </select>
+                <textarea id="sleep-explanation" name="sleep-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="stress">How often do you feel overwhelmed by stress?</label><br>
+                <select id="stress" name="stress">
+                    <option value="">Select an option</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Often">Often</option>
+                    <option value="Always">Always</option>
+                </select>
+                <textarea id="stress-explanation" name="stress-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="sleep-pattern">How would you describe your sleep patterns?</label><br>
+                <select id="sleep-pattern" name="sleep-pattern">
+                    <option value="">Select an option</option>
+                    <option value="Regular and restful">Regular and restful</option>
+                    <option value="Occasionally disrupted">Occasionally disrupted</option>
+                    <option value="Frequently disturbed">Frequently disturbed</option>
+                    <option value="Severely disturbed or irregular">Severely disturbed or irregular</option>
+                </select>
+                <textarea id="sleep-pattern-explanation" name="sleep-pattern-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="sadness">Do you experience persistent feelings of sadness or hopelessness?</label><br>
+                <select id="sadness" name="sadness">
+                    <option value="">Select an option</option>
+                    <option value="No">No</option>
+                    <option value="Occasionally">Occasionally</option>
+                    <option value="Frequently">Frequently</option>
+                    <option value="Constantly">Constantly</option>
+                </select>
+                <textarea id="sadness-explanation" name="sadness-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="cope">How do you cope with difficult situations or emotions?</label><br>
+                <select id="cope" name="cope">
+                    <option value="">Select an option</option>
+                    <option value="Healthy coping mechanisms (talking to friends, exercising, etc.)">Healthy coping mechanisms (talking to friends, exercising, etc.)</option>
+                    <option value="Sometimes healthy, sometimes unhealthy coping mechanisms">Sometimes healthy, sometimes unhealthy coping mechanisms</option>
+                    <option value="Mostly unhealthy coping mechanisms (substance abuse, avoidance, etc.)">Mostly unhealthy coping mechanisms (substance abuse, avoidance, etc.)</option>
+                    <option value="No effective coping mechanisms">No effective coping mechanisms</option>
+                </select>
+                <textarea id="cope-explanation" name="cope-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="appetite">Have you noticed changes in your appetite or weight recently?</label><br>
+                <select id="appetite" name="appetite">
+                    <option value="">Select an option</option>
+                    <option value="No">No</option>
+                    <option value="Slight changes">Slight changes</option>
+                    <option value="Significant changes">Significant changes</option>
+                    <option value="Extreme changes">Extreme changes</option>
+                </select>
+                <textarea id="appetite-explanation" name="appetite-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="concentration">Do you find it difficult to concentrate or make decisions?</label><br>
+                <select id="concentration" name="concentration">
+                    <option value="">Select an option</option>
+                    <option value="No">No</option>
+                    <option value="Occasionally">Occasionally</option>
+                    <option value="Frequently">Frequently</option>
+                    <option value="Always">Always</option>
+                </select>
+                <textarea id="concentration-explanation" name="concentration-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="panic">How often do you experience panic attacks or sudden intense feelings of fear?</label><br>
+                <select id="panic" name="panic">
+                    <option value="">Select an option</option>
+                    <option value="Never">Never</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Frequently">Frequently</option>
+                </select>
+                <textarea id="panic-explanation" name="panic-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="relationships">Are you satisfied with your relationships and social interactions?</label><br>
+                <select id="relationships" name="relationships">
+                    <option value="">Select an option</option>
+                    <option value="Yes, very satisfied">Yes, very satisfied</option>
+                    <option value="Mostly satisfied">Mostly satisfied</option>
+                    <option value="Sometimes dissatisfied">Sometimes dissatisfied</option>
+                    <option value="Very dissatisfied">Very dissatisfied</option>
+                </select>
+                <textarea id="relationships-explanation" name="relationships-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="thoughts">Do you experience intrusive or obsessive thoughts that you can't control?</label><br>
+                <select id="thoughts" name="thoughts">
+                    <option value="">Select an option</option>
+                    <option value="No">No</option>
+                    <option value="Rarely">Rarely</option>
+                    <option value="Sometimes">Sometimes</option>
+                    <option value="Frequently">Frequently</option>
+                </select>
+                <textarea id="thoughts-explanation" name="thoughts-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="happiness">How would you rate your overall level of happiness and contentment?</label><br>
+                <select id="happiness" name="happiness">
+                    <option value="">Select an option</option>
+                    <option value="Very happy">Very happy</option>
+                    <option value="Moderately happy">Moderately happy</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Unhappy or very unhappy">Unhappy or very unhappy</option>
+                </select>
+                <textarea id="happiness-explanation" name="happiness-explanation" placeholder="Please explain (optional)"></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
